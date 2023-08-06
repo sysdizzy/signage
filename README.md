@@ -1,5 +1,5 @@
 # signage
-Sign and Verify binaries in your $PATH for end-point OpSec.
+Sign and Verify binaries in your $PATH for end-point OpSec, written in Go. Uses SHA-256.
 
 Install:
 1. install golang on your machine
