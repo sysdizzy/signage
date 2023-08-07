@@ -54,7 +54,7 @@ func sign() error {
 		return err
 	}
 
-	err != ioutil.WriteFile("keys/signed.xml", xmlData, 0644)
+	err = ioutil.WriteFile("signatures/signed.xml", xmlData, 0644)
 	if err != nil {
 		return err
 	}
@@ -72,7 +72,7 @@ func generateHash(path string) (string, error) {
 	return fmt.Sprintf("%x", hash), nil
 }
 func verify() error {
-	xmlData, err := ioutil.ReadFile("keys/signed.xml")
+	xmlData, err := ioutil.ReadFile("signatures/signed.xml")
 	if err != nil {
 		return err
 	}
