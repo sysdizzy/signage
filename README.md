@@ -3,10 +3,9 @@ Sign and Verify binaries in your $PATH for end-point OpSec, written in Go. Uses 
 
 Install:
 1. install golang on your machine
-2. mkdir ~/signage
-3. touch ~/signage/signed.xml ~/signage/diff.log
-4. git clone https://github.com/sysdizzy/signage to your preffered directory
-5. go build src/* OR run from source code (go run src/signage.go) from the cloned directory.
+2. git clone https://github.com/sysdizzy/signage to your preffered directory
+3. touch signatures/signed.xml logs/diff.log
+4. go build signage.go OR run from source code (go run signage.go) from the cloned directory.
 
 WARNING: Sudo or root access is required since it makes hashes for the sudo command.
 
